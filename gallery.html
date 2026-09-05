@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work Gallery | United AtoZ Printing Service, Bhaktapur</title>
+<meta name="description" content="Browse real print, signage and design work from United AtoZ Printing Service in Bhaktapur, business cards, banners, branded merch and more.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.unitedatozprinting.com.np/gallery.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Work Gallery | United AtoZ Printing Service">
+<meta property="og:description" content="Browse real print, signage and design work from United AtoZ Printing Service in Bhaktapur.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ============ ANNOUNCEMENT BAR ============
+     EDIT ME: change the offer text/link below.
+     To turn the whole bar off, delete this block (from
+     <div class="announce-bar" to its closing </div>) on every page. -->
+<script>
+(function(){
+  try{
+    var t=parseInt(localStorage.getItem('uazAnnounceDismissedAt')||'0',10);
+    if(t && (Date.now()-t) < 3*24*60*60*1000){
+      document.documentElement.classList.add('announce-hidden');
+    }
+  }catch(e){}
+})();
+</script>
+<div class="announce-bar" id="announceBar">
+  <div class="announce-inner">
+    <span class="announce-text">🎉 New Year Offer: <strong>15% off</strong> on bulk business card &amp; banner orders this month. <a href="tel:+9779860607569">Call to claim</a></span>
+    <button class="announce-close" id="announceClose" aria-label="Dismiss announcement">&times;</button>
+  </div>
+</div>
+
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/uaz-logo.png" alt="United AtoZ Printing Service logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div class="brand-fallback" style="display:none;">2082 UAZ<span>PRINTING SERVICE</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="products.html">Products</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+9779860607569" class="phone-pill"><i class="fa-solid fa-phone"></i><span>+977-9860607569</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Gallery</div>
+    <div class="eyebrow">Our Work</div>
+    <h1>Real work, real results</h1>
+    <p>A look at print, signage and design projects completed for clients across Bhaktapur and Kathmandu.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section">
+  <div class="container">
+    <div class="gallery-filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="print">Print</button>
+      <button data-filter="signage">Signage</button>
+      <button data-filter="design">Design</button>
+      <button data-filter="merch">Merch</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item reveal" data-cat="print"><i class="fa-solid fa-id-card"></i><span>Visiting Cards</span></div>
+      <div class="gallery-item reveal" data-cat="signage"><i class="fa-solid fa-signs-post"></i><span>Glow Sign Board</span></div>
+      <div class="gallery-item reveal" data-cat="print"><i class="fa-solid fa-calendar-days"></i><span>2026 Calendar</span></div>
+      <div class="gallery-item reveal" data-cat="merch"><i class="fa-solid fa-mug-hot"></i><span>Branded Mugs</span></div>
+      <div class="gallery-item reveal" data-cat="design"><i class="fa-solid fa-swatchbook"></i><span>Brand Identity</span></div>
+      <div class="gallery-item reveal" data-cat="signage"><i class="fa-solid fa-flag"></i><span>Flex Banner</span></div>
+      <div class="gallery-item reveal" data-cat="print"><i class="fa-solid fa-book"></i><span>Company Profile</span></div>
+      <div class="gallery-item reveal" data-cat="merch"><i class="fa-solid fa-shirt"></i><span>Custom T-Shirts</span></div>
+      <div class="gallery-item reveal" data-cat="design"><i class="fa-solid fa-pen-nib"></i><span>Logo Design</span></div>
+      <div class="gallery-item reveal" data-cat="print"><i class="fa-solid fa-receipt"></i><span>Bill Books</span></div>
+      <div class="gallery-item reveal" data-cat="signage"><i class="fa-solid fa-vest"></i><span>Standee</span></div>
+      <div class="gallery-item reveal" data-cat="merch"><i class="fa-solid fa-bag-shopping"></i><span>Tote Bags</span></div>
+    </div>
+    <!-- TODO: replace icon placeholders with real photographed work samples -->
+    <p style="text-align:center; font-size:0.8rem; color:var(--text-dim); margin-top:2rem; font-style:italic;">Photos of real completed work coming soon.</p>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="section" style="padding-top:0;">
+  <div class="cta-band">
+    <h2>Like what you see?</h2>
+    <p>Let's talk about your project. Call, WhatsApp, or visit the shop in Bhaktapur.</p>
+    <div class="cta-actions">
+      <a href="tel:+9779860607569" class="btn btn-primary" style="background:var(--pink);">Call Now</a>
+      <a href="https://wa.me/9779860607569" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/uaz-logo.png" alt="United AtoZ Printing Service" onerror="this.style.display='none';">
+      <p>Printing, design and signage under one roof in Bhaktapur, serving Kathmandu and Lalitpur. Same-day turnaround, in-house design team, open 24 hours.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/9779860607569" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html#offset">Offset Printing</a></li>
+        <li><a href="services.html#digital">Digital Printing</a></li>
+        <li><a href="services.html#designing">Designing</a></li>
+        <li><a href="services.html#fabric">Print on Fabric</a></li>
+        <li><a href="services.html#signage">Signage & Banners</a></li>
+        <li><a href="services.html#stationery">Books & Stationery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+9779860607569">+977-9860607569</a></li>
+        <li><a href="https://wa.me/9779860607569" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        <li><a href="https://maps.app.goo.gl/JpneWRUzQFSCHP1c6" target="_blank" rel="noopener">Bhaktapur 44600, Nepal</a></li>
+        <li>Open 24 Hours</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 United AtoZ Printing Service</span>
+    <span>Quality Print, Lasting Impact</span>
+  </div>
+</footer>
+
+<!-- ============ FIXED SIDE CONTACT CTA ============
+     EDIT ME: change phone number / links here if they ever change. -->
+<div class="side-cta" aria-label="Quick contact">
+  <a href="tel:+9779860607569" class="side-cta-btn" aria-label="Call United AtoZ Printing Service"><i class="fa-solid fa-phone"></i><span>+977-9860607569</span></a>
+  <a href="https://wa.me/9779860607569" target="_blank" rel="noopener" class="side-cta-btn whatsapp" aria-label="WhatsApp United AtoZ Printing Service"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp Us</span></a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
