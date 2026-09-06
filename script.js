@@ -24,7 +24,7 @@
     /* ---------- Announcement bar: measure height, handle dismiss ---------- */
     var announceBar = document.getElementById('announceBar');
     var announceClose = document.getElementById('announceClose');
-    var ANNOUNCE_KEY = 'uazAnnounceDismissedAt';
+    var ANNOUNCE_KEY = 'uazAnnounceDismissedAt_img1';
     var ANNOUNCE_DAYS = 3; // how many days a dismissal stays hidden
     function setAnnounceHeight() {
       if (announceBar && !document.documentElement.classList.contains('announce-hidden')) {
