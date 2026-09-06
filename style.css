@@ -166,25 +166,24 @@ section[id]{scroll-margin-top:100px;}
    "ANNOUNCEMENT BAR"). This CSS block controls how it looks. ---------- */
 :root{--announce-h:0px;}
 .announce-bar{position:fixed;top:0;left:0;right:0;z-index:1100;
-  background:linear-gradient(90deg,var(--navy),#0a3aa0 55%,var(--pink));
-  color:#fff;box-shadow:0 2px 10px rgba(0,35,116,.18);}
-.announce-inner{position:relative;max-width:var(--max-w);margin-inline:auto;
-  padding:.6rem 2.6rem;display:flex;align-items:center;justify-content:center;
-  text-align:center;gap:.5rem;}
-.announce-text{font-family:var(--font-display);font-weight:500;font-size:.85rem;line-height:1.4;}
-.announce-text strong{color:var(--yellow);}
-.announce-text a{color:#fff;text-decoration:underline;font-weight:700;white-space:nowrap;}
-.announce-text a:hover{color:var(--yellow);}
-.announce-close{position:absolute;right:var(--pad);top:50%;transform:translateY(-50%);
-  width:22px;height:22px;border-radius:50%;border:0;background:rgba(255,255,255,.2);
-  color:#fff;font-size:1rem;line-height:1;cursor:pointer;flex-shrink:0;transition:background .2s;}
-.announce-close:hover{background:rgba(255,255,255,.35);}
+  background:var(--navy);box-shadow:0 2px 10px rgba(0,35,116,.18);
+  line-height:0;}
+.announce-bar a.announce-link{display:block;line-height:0;}
+.announce-img-desktop,.announce-img-mobile{display:block;width:100%;height:auto;}
+.announce-img-mobile{display:none;}
+.announce-close{position:absolute;right:.6rem;top:50%;transform:translateY(-50%);
+  width:24px;height:24px;border-radius:50%;border:0;background:rgba(255,255,255,.28);
+  color:#fff;font-size:1.05rem;line-height:1;cursor:pointer;flex-shrink:0;
+  transition:background .2s;display:flex;align-items:center;justify-content:center;
+  backdrop-filter:blur(2px);}
+.announce-close:hover{background:rgba(255,255,255,.45);}
 html.announce-hidden .announce-bar{display:none;}
 html.announce-hidden{--announce-h:0px !important;}
 body{padding-top:var(--announce-h);transition:padding-top .3s var(--ease);}
 @media (max-width:600px){
-  .announce-inner{padding:.6rem 2.2rem;}
-  .announce-text{font-size:.78rem;}
+  .announce-img-desktop{display:none;}
+  .announce-img-mobile{display:block;}
+  .announce-close{right:.4rem;width:22px;height:22px;font-size:.95rem;}
 }
 @media (max-width:420px){
   .hero h1{font-size:clamp(2.1rem,9vw,2.6rem);}
