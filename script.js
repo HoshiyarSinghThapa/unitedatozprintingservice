@@ -48,6 +48,26 @@
       }
     }
 
+    /* ---------- Side contact CTA: stay hidden until visitor scrolls past the hero ----------
+       Prevents it overlapping hero buttons/marquee content near the top of the page. */
+    var sideCta = document.querySelector('.side-cta');
+    var heroSection = document.querySelector('.hero, .page-hero');
+    if (sideCta && heroSection) {
+      if ('IntersectionObserver' in window) {
+        var heroObs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            sideCta.classList.toggle('is-visible', !entry.isIntersecting);
+          });
+        }, { threshold: 0, rootMargin: '-40px 0px 0px 0px' });
+        heroObs.observe(heroSection);
+      } else {
+        sideCta.classList.add('is-visible');
+      }
+    } else if (sideCta) {
+      // Pages without a .hero section (About/Services/etc.) can show it right away
+      sideCta.classList.add('is-visible');
+    }
+
     /* ---------- Mobile nav ---------- */
     var hamburger = document.getElementById('hamburger');
     var mobileNav = document.getElementById('mobileNav');
